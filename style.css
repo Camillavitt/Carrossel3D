@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+body{
+    margin: 0;
+    background-image: url(https://cdn.pixabay.com/photo/2015/09/21/13/17/road-949832_1280.jpg);
+    font-family: sans-serif;
+    color: #000000;
+}
+
+span{
+    font-family: 'Fjalla One', sans-serif;
+    text-shadow: 1px 1px 2px white;
+}
+
+h1{
+    color: aliceblue;
+    background-color: #000000;
+    border-radius: 20px;
+    border: solid;
+    text-align: center;
+}
+
+.container{
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 900px;
+}
+
+.carrossel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 30s infinite forwards linear ;
+}
+
+.imagem{
+    position: absolute;
+    width: 290px;
+    height: 187px;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    display: flex;
+    border-radius: 20px;
+    border: solid white;
+}
+
+.imagem span{
+    margin: auto;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+@keyframes rotate360 {
+
+    from{
+        transform: rotateY(0deg);
+    }
+
+    to{
+        transform: rotateY(-360deg);
+    }
+    
+}
+
+.imagem:nth-child(1){
+    background-image: url(https://rascunho.com.br/wp-content/uploads/2020/12/Clarice_Lispector_100-1024x818.jpeg);
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.imagem:nth-child(2){
+    background-image: url(https://i.pinimg.com/564x/93/62/23/9362234776ba92eb89dfb907a386f782.jpg);
+    transform: rotateY(40deg) translateZ(430px);
+}
+
+.imagem:nth-child(3){
+    background-image: url(https://i.pinimg.com/564x/8c/3d/db/8c3ddb55178fef85c1adbef5f9f03f0b.jpg);
+    transform: rotateY(80deg) translateZ(430px);
+}
+
+.imagem:nth-child(4){
+    background-image: url(https://i0.wp.com/teamcomics.com.br/wp-content/uploads/2020/12/vida-e-obra-de-clarice-lispector-og.jpg?fit=600%2C315&ssl=1);
+    transform: rotateY(120deg) translateZ(430px);
+}
+
+.imagem:nth-child(5){
+    background-image: url(https://s.glbimg.com/jo/g1/f/original/2016/12/11/clarice_lispector.jpg);
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+.imagem:nth-child(6){
+    background-image: url(https://culturadoria.com.br/wp-content/uploads/2020/06/Clarice-Lispector-foto-Badar%C3%B3-Braga-A-Cigarra-Arquivo-EM-2-1024x567.jpg);
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.imagem:nth-child(7){
+    background-image: url(https://ufmg.br/thumbor/ZRZooPUYVs_ajVBMGVC4drVHixM=/0x0:2000x1118/2000x1118/https://ufmg.br/storage/d/6/7/7/d67798ccc90cddb5286c292fc4b3845f_16079645638388_2075629703.jpg);
+    transform: rotateY(240deg) translateZ(430px);
+}
+
+.imagem:nth-child(8){
+    background-image: url(https://site.claricelispector.ims.com.br/wp-content/uploads/li-0085.jpg);
+    transform: rotateY(280deg) translateZ(430px);
+}
+
+.imagem:nth-child(9){
+    background-image: url(https://www.literaturablog.com/wp-content/uploads/2020/12/c9e628_1b702b787ecc42dc85ff5b90ef1098f5_mv2.jpg);
+    transform: rotateY(320deg) translateZ(430px);
+}
